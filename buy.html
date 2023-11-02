@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>About Aura Followers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="Aura.html"><img src="images/aura.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="buy.html">HOW TO BUY</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+ 
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+      <!--  <div class="text-box">
+            <h1>Welcome to aura followers</h1>
+            <p>Buy Instagram followers as your next best investment. Instagram, with over 1 billion active users, offers many opportunities to those who want to raise their voices on social media. <br>The engagement rate is higher than ever, and it is not expected to drop any time soon. </p>
+            <a href="" class="hero-btn" onclick="alert('Not working yet')">Visit Us</a>
+        </div>
+    </section> -->
+
+
+    <section class="Howtobuy">
+        <h1>Select a Social Media Platform</h1>
+        <p>Choose your preferred platform and enter the amount you want to purchase.</p>
+        
+        <form id="buy-form">
+            <label for="platform">Platform:</label>
+            <select id="platform" name="platform">
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Facebook">Facebook</option>
+            </select>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+            
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+        </form>
+
+        <div id="price-result" style="display: none;">
+            <h2>Total Price:</h2>
+            <p id="total-price"></p>
+            <p>For checkout, please contact us on WhatsApp:</p>
+            <p id="whatsapp-number">0774005032</p>
+        </div>
+    </section>
+
+    <script>
+        function calculatePrice() {
+            const platform = document.getElementById("platform").value;
+            const amount = parseFloat(document.getElementById("amount").value);
+            let price = 0;
+
+            
+            if (platform === "Instagram") {
+                price = amount * 2.99;
+            } else if (platform === "TikTok") {
+                price = amount * 1.99;
+            } else if (platform === "Facebook") {
+                price = amount * 3.99;
+            }
+
+            // Display the price and WhatsApp number
+            document.getElementById("total-price").textContent = "$" + price.toFixed(2);
+            document.getElementById("whatsapp-number").textContent = "0774005032"; 
+            document.getElementById("price-result").style.display = "block";
+
+        }
+       
+    var navLinks = document.getElementById("navLinks");
+    function showmenu() {
+        navLinks.style.right = "0";
+    }
+    function hidemenu() {
+        navLinks.style.right = "-200px";
+    }
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>

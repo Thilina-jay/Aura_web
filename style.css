@@ -1,0 +1,426 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Ubuntu', sans-serif;
+    }
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(48, 48, 50, 0.7),rgba(34, 35, 37, 0.7)),url(images/e475855ee5fe583d2117e94612ae7050.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+display: flex;
+padding: 0% 2%;
+justify-content: space-between;
+align-items: center;
+
+
+}
+nav img{
+width: 100px;
+
+
+}
+.nav-links{
+flex: 1;
+text-align: right;
+
+
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 9px 13px;
+    position: relative;
+
+}
+.nav-links ul li a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 13px;
+
+}
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 3px;
+background: #939191;
+display: block;
+margin: auto;
+transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%; 
+}
+.text-box{
+width: 90%;
+color: rgb(255, 255, 255);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font: size 14px; ;
+    color: aliceblue;
+}
+.hero-btn{
+display: inline-block;
+text-decoration: none;
+color: aliceblue;
+border: 1px solid aliceblue;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid rgb(154, 154, 154);
+    background: #888888;
+    transition: 1.5s;}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1 {
+        font-size: 20px;
+       }
+       .nav-links ul li {
+        display: block;
+      }
+      .nav-links{
+        position: absolute;
+        background: #183765;
+        height: 100vh; 
+        width: 200px;
+        top: 0;
+        right: -200px; 
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+
+      }
+      nav .fa{
+        display: block;
+        color: rgb(227, 230, 233);
+        margin: 10px; 
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .nav-links ul {
+        padding:30px ;
+
+      }
+
+}
+/* how to buy */
+.Howtobuy{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+h3{color: rgb(0, 0, 0);
+text-align: center;
+font-weight: 600;
+margin:10px 0 ;
+
+
+}
+
+p{color: #444141;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+padding: 10px;
+
+}
+.row{
+margin-top:5% ;
+display: flex;
+justify-content: space-between;
+}
+.howtobuy-col{
+flex-basis: 31%;
+background: rgb(98, 187, 217);
+border-radius: 10px;
+margin-bottom: 5%;
+padding: 20px 12px;
+box-sizing: border-box;
+transition: 0.5s;
+
+
+}
+.howtobuy-col:hover{
+box-shadow:0 0 20px 0px rgba(0, 0, 0, 0.7) ;
+}
+@media(max-width: 700px){
+.row{
+    flex-direction: column;
+}
+
+}
+.Reviews{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.Reviews-col{
+flex-basis: 32%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+}
+.Reviews-col img{
+    width: 100%;
+    display: block;
+ }
+ .layer{
+background:transparent;
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transition: 0.5s;
+ }
+.layer:hover{
+    background: rgba(95, 97, 97, 0.7);
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+transition: 0.5s;
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+}
+
+
+
+.contact{
+    width:50% ;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+.contact-col{
+flex-basis: 31%;
+border-radius: 10px;
+margin-bottom:5% ;
+text-align: center;
+
+
+}
+.contact-col img {
+    width:60px;
+    height: 60px;
+    border-radius: 8px;
+
+}
+.contact-col p{
+    padding: 0;
+
+}
+.contact-col h1{
+font-size: 10px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align:center;
+}
+/* Contact Form Styles */
+.contact-form {
+    background-color: #fcf7f7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #f6fbff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #193fba;
+    border-radius: 3px;
+}
+
+.submit-button {
+    background-color: #0b3561;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+/* Styling for the About Us section */
+.about-us {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 24px; /* Heading font size */
+    color: #000000; /* Heading text color */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.about-us p {
+    font-size: 16px; /* Paragraph font size */
+    color: #05061c; /* Paragraph text color */
+    line-height: 1.6; /* Line spacing */
+}
+
+/* Centering the content in the section */
+.about-us {
+    text-align: center;
+}
+
+/* Adding a box shadow for a subtle effect */
+.about-us {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Style for the How to Buy section */
+.Howtobuy {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Howtobuy h1 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.Howtobuy p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Style for the buy-form */
+#buy-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #030303;
+    margin-top: 10px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #0d1347;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the price-result div */
+#price-result {
+    display: none;
+    margin-top: 30px;
+}
+
+#price-result h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#price-result p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+

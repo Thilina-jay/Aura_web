@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>About Aura Followers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="Aura.html"><img src="images/aura.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="buy.html">HOW TO BUY</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
+
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Thank for choosing Aura followers</h1>
+        <p>Once again, thank you for choosing Aura. We look forward to serving you and ensuring that your experience with us is nothing short of exceptional. </p>
+       
+        </div>
+        
+        
+
+
+</section>
+
+<section class="Reviews">
+    <h1>Customer Reviews</h1>
+    <p>Here's what our customers have to say about our services:</p>
+    <div class="row">
+        <div class="Reviews-col">
+            <img src="images/positive-review-examples-13.png" alt="User1 Image">
+            <div class="layer">
+    
+            </div>
+        </div>
+        <div class="Reviews-col">
+            <img src="images/positive-review-examples-14.png" alt="User2 Image">
+            <div class="layer">
+ 
+            </div>
+        </div>
+        <div class="Reviews-col">
+            <img src="images/positive-review-examples-16.png" alt="User3 Image">
+            <div class="layer">
+        
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu() {
+        navLinks.style.right = "0";
+    }
+    function hidemenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+</body>
+</html>
